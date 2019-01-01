@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9b5b708-ef71-41dc-add1-e62ebf2f76c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Siyothlk.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/controllers/Gallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/add_photo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Model_gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Model_gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/general_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/general_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/asset/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="b9b5b708-ef71-41dc-add1-e62ebf2f76c3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,12 +245,12 @@
       <option name="presentableId" value="Default" />
       <updated>1546220640499</updated>
       <workItem from="1546220641906" duration="26750000" />
-      <workItem from="1546309406659" duration="9804000" />
+      <workItem from="1546309406659" duration="10403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36554000" />
+    <option name="totallyTimeSpent" value="37153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
