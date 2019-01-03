@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
 
 	public function index() {
-		$this->load->view('new_home');
+		$this->load->view('home');
 	}
 
 	public function login() {
@@ -69,7 +69,7 @@ class Home extends CI_Controller {
 
     }
 
-    public function get_photos(){
+    public function gallery(){
 
         $this->load->model("Model_gallery");
         $result['photos']=$this->Model_gallery->get_photo();

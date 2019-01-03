@@ -1,7 +1,5 @@
 <?php $page = 'gallery'; include "header.php"?>
 
-
-
 <br>
 
     <nav aria-label="breadcrumb">
@@ -12,22 +10,42 @@
     </nav>
 
 
-<br>
-<div class="row mt-500">
-    <div id="sidebar" class="visible" style="background: #b1bcb6; width: 200px; display: block;  left: 0px; top: 0px; transition: left 0.3s linear">
-        <ul style="margin-left: 15px; padding: 0px">
-            <li style="list-style: none"><a href="<?php echo base_url('index.php/Gallery/add_photos') ?>" style="background: #6c757d ; color: #303332; border-bottom: 1px ;height: 50px; display: block; padding-top: 20px">Add Photo</a></li>
-            <li style="list-style: none"><a href="#" style="color: #303332; border-bottom: 1px  ;height: 50px; display: block; padding-top: 20px">Categories</a></li>
-            <li style="list-style: none"><a href="#" style="color: #303332; border-bottom: 1px  ;height: 50px; display: block; padding-top: 20px">link3</a></li>
-        </ul>
+    <div class="pos-f-t">
+        <nav class="navbar navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_gallery" aria-controls="navbar_gallery" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </nav>
+        <div class="collapse" id="navbar_gallery">
+            <div class="bg-dark p-4">
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url('index.php/Gallery/add_photos') ?>">Add photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo base_url('index.php/Gallery/categories') ?>">Categories</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+                <!--h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span-->
+            </div>
+        </div>
+
     </div>
 
-    <!--div id="sidebar-btn" style="display: inline-block; vertical-align: middle; width: 20px; height: 15px;cursor: pointer; margin: 20px">
-        <span style="height: 1px; background: #111; margin-bottom: 5px; display: block"></span>
-        <span style="height: 1px; background: #111; margin-bottom: 5px; display: block"></span>
-        <span style="height: 1px; background: #111; margin-bottom: 5px; display: block"></span>
+<br>
 
-    </div-->
+<div class="row mt-500">
+
 
 <div class="container col-md-7" style="-ms-high-contrast-adjust: auto">
 
@@ -74,10 +92,44 @@
 <br>
 <br>
 
+<!--
+    <div class="container">
+
+
+
+
+/*        if(!empty($photos)) {
+
+            echo '<div class="card-columns">';
+            foreach ($photos as $photo){
+
+
+                echo "<div class=\"card border-success mb-3\">";
+                echo "<div class=\"card-body text-success\" >";
+                echo "<h5 class=\"card-title\"> $photo->name</h5>";
+                echo "<img src=".base_url('gallery_images/') . $photo->link." style>";
+                echo '</div>';
+                echo '</div></a>';
+                //echo "<input type=\"hidden\" name=".$cat->id.">";
+
+            }
+            echo '</div>';
+        }
+
+        */?>
+
+
+
+
+    </div>-->
+
+
+
+
 <?php
     if(!empty($photos)) {
         $i=1;
-        echo '<div class="container">';
+        echo '<div class="container ">';
         foreach ($photos as $photo) {
 
             switch ($i){
@@ -141,6 +193,7 @@
 
 
         }
+        echo '</div>';
 
 }
 ?>
