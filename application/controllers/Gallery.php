@@ -22,11 +22,14 @@ class Gallery extends CI_Controller
     public function categories(){
         $this->load->model('Model_gallery');
         $data['category']=$this->Model_gallery->cat_list();
-        //$data['photos']=$this->Model_gallery->get_cat_photos();
 
         $this->load->view('photo_category',$data);
 
     }
+
+
+
+
 
     public function add_new_photo() {
 

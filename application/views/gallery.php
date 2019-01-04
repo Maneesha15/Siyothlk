@@ -24,13 +24,24 @@
 
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle-split" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+
+                            </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('index.php/Gallery/add_photos') ?>">Add photos</a>
+                                <a class="nav-link btn btn-secondary" href="<?php echo base_url('index.php/Gallery/add_photos') ?>">Add photos  </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="<?php echo base_url('index.php/Gallery/categories') ?>">Categories</a>
-                            </li>
+
 
                         </ul>
                     </div>
@@ -44,10 +55,10 @@
 
 <br>
 
-<div class="row mt-500">
+<div class="row mt-500" >
 
 
-<div class="container col-md-7" style="-ms-high-contrast-adjust: auto">
+<div class="container col-md-8" style="-ms-high-contrast-adjust: auto">
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -129,7 +140,7 @@
 <?php
     if(!empty($photos)) {
         $i=1;
-        echo '<div class="container ">';
+        //echo '<div class="container ">';
         foreach ($photos as $photo) {
 
             switch ($i){
@@ -137,7 +148,7 @@
                     echo '<div class="row">';
 
                     echo '<div class="col-md-4 float-md-left">';
-                    echo '<div class="img-thumbnail">';
+                    echo '<div class="img-thumbnail rounded">';
                     ?>
                     <p><?php echo $photo->name?></p>
                     <a href="<?php echo base_url('gallery_images/') . $photo->link ?>" download="">
@@ -193,7 +204,7 @@
 
 
         }
-        echo '</div>';
+        //echo '</div>';
 
 }
 ?>

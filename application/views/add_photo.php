@@ -13,7 +13,7 @@
 <div class="container col-md-6">
     <?php echo form_open("Gallery/add_new_photo") ?>
         <div class="form-group">
-            <label for="bird">Bird Name</label>
+            <label for="bird">Bird Name  </label>
             <select name="bird" >
                 <?php
                 print_r($b_list);

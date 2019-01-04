@@ -19,7 +19,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 
+
     <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+
+    <script src="https://cdn.ckeditor.com/4.11.1/full/ckeditor.js"></script>
+
 
     <title> Siyoth.lk </title>
 
@@ -72,10 +76,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </li>
             <li class="nav-item">
                 <a class="nav-link <?php if($page=='sanctuaries'){echo " active";}?>" href="<?php echo base_url('index.php/home/sanctuary') ?>">Sanctuaries</a>
+
+
             </li>
             <li class="nav-item">
                 <a class="nav-link <?php if($page=='gallery'){echo " active";}?>" href="<?php echo base_url('index.php/home/gallery') ?>">Gallery</a>
             </li>
+
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

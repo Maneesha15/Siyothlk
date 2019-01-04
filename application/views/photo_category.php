@@ -24,11 +24,13 @@
                 echo '<div class="card-columns">';
                 foreach ($category as $cat){
 
+                    echo "<a href=".base_url('index.php/gallery/get_category_images/').$cat->id." onclick='setImageVisible('1',true)'>";
+                    //echo "<a href=\"javascript:setImageVisible('1', true)\" onclick=\"setImageVisible('1',true)\">";
+                    echo"<div class=\"card border-success mb-3\">";
 
-                    echo "<a href=\"javascript:setImageVisible('".$cat->id."', true)\"><div class=\"card border-success mb-3\">";
                     echo "<div class=\"card-body text-success\" >";
                     echo "<h5 class=\"card-title\"> $cat->name</h5>";
-                    echo "<p class=\"card-text\">$cat->details</p>";
+                    //echo "<p class=\"card-text\">$cat->details</p>";
                     echo '</div>';
                     echo '</div></a>';
                     //echo "<input type=\"hidden\" name=".$cat->id.">";
@@ -46,12 +48,12 @@
     <a href="javascript:setImageVisible('1', true)">show image</a>
     <a href="javascript:setImageVisible('1', false)">hide image</a>
 
-    <div class="container" id="1">
+    <div class="container" id="1" >
 
-        <h2>html</h2>
+        <?php  include "category_gallery.php"?>
     </div>
 
-<?php
+<!--?php
 /*if(!empty($photos)) {
 
 
@@ -69,7 +71,7 @@
     echo '</div>';
 }
 
-*/?>
+*/?-->
 
 
 
